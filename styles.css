@@ -1,0 +1,235 @@
+/* Daloy — shared styles for legal pages */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --teal: #17A08E;
+  --teal-bright: #2DD4BF;
+  --ink: #0D1417;
+  --bg-dark: #081311;
+  --bg-light: #EEF2F1;
+  --muted: #8A9599;
+  --card: #FFFFFF;
+  --border: rgba(13, 20, 23, 0.1);
+  --font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg-light);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Wave mark */
+.wave-mark {
+  display: block;
+}
+
+.wave-mark path {
+  stroke: var(--teal);
+}
+
+.wave-mark.on-dark path {
+  stroke: var(--teal-bright);
+}
+
+/* Brand header (used on doc pages) */
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.brand-header .wordmark {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.brand-rule {
+  width: 56px;
+  height: 3px;
+  background: var(--teal);
+  border-radius: 2px;
+  margin: 18px 0 28px;
+}
+
+/* Eyebrow label */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--teal);
+}
+
+/* Pill link */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--teal);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.pill:hover {
+  background: var(--teal);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pill .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal-bright);
+}
+
+.pill:hover .dot {
+  background: #fff;
+}
+
+/* ---------- Document pages ---------- */
+
+.doc-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+}
+
+.doc-page .top-nav {
+  margin-bottom: 40px;
+}
+
+.doc-page h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 6px 0 4px;
+}
+
+.doc-page .updated {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.doc-page h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+.doc-page p,
+.doc-page li {
+  color: #2B3538;
+  font-size: 0.98rem;
+}
+
+.doc-page ul,
+.doc-page ol {
+  padding-left: 1.3em;
+}
+
+.doc-page footer {
+  margin-top: 4em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* ---------- Index / hero page ---------- */
+
+.hero {
+  min-height: 100vh;
+  background: radial-gradient(ellipse 60% 50% at 75% 30%, rgba(23, 160, 142, 0.16), transparent),
+              var(--bg-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-left: 6px solid var(--teal);
+}
+
+.hero-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+.hero .brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.hero .wordmark {
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.hero .brand-rule {
+  margin: 20px 0 32px;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 16px;
+  max-width: 480px;
+}
+
+.hero .tagline {
+  color: #A9B7B4;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.hero .doc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+  .doc-page {
+    padding: 40px 18px 72px;
+  }
+}
