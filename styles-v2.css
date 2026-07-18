@@ -515,13 +515,30 @@ section{ padding-block:var(--space-6); position:relative; }
 .final-cta .section-head{ margin-inline:auto; }
 .final-cta-email{ margin-top:var(--space-2); color:var(--foreground-muted); font-size:.95rem; }
 .final-cta-email a{ color:var(--accent-tint); text-decoration:underline; text-underline-offset:3px; }
+/* Desktop: frame Google's (light) booking UI in a clean white card so it reads as intentional */
 .booking-wrap{
-  margin-top:var(--space-5);
-  background:var(--surface); border:1px solid var(--surface-border);
-  border-radius:var(--radius-lg); overflow:hidden; min-height:640px;
-  backdrop-filter:blur(10px);
+  margin:var(--space-5) auto 0;
+  max-width:940px;
+  background:#fff;
+  border:1px solid var(--surface-border-strong);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  padding:clamp(6px, 1.4vw, 16px);
+  box-shadow:0 30px 80px rgba(0,0,0,.5), 0 0 70px -18px var(--accent-glow);
 }
-.booking-frame{ display:block; width:100%; min-width:280px; height:640px; border:0; }
+.booking-frame{ display:block; width:100%; min-width:280px; height:700px; border:0; border-radius:var(--radius); background:#fff; }
+
+/* Mobile: the embed is too tall/awkward, so offer a button that opens Google's booking page */
+.booking-cta-mobile{ display:none; }
+.booking-cta-note{ margin-top:var(--space-2); font-size:.85rem; color:var(--foreground-dim); }
+
+@media (max-width:768px){
+  .booking-wrap{ display:none; }
+  .booking-cta-mobile{
+    display:flex; flex-direction:column; align-items:center;
+    gap:var(--space-1); margin-top:var(--space-4);
+  }
+}
 
 /* ---------- Footer ---------- */
 .site-footer{ padding-block:var(--space-5) var(--space-4); border-top:1px solid var(--surface-border); }
@@ -537,3 +554,54 @@ section{ padding-block:var(--space-6); position:relative; }
 
 /* recolor shared wave mark to gradient stroke via CSS on v2 */
 .daloy-mark .wave{ stroke:url(#daloyGrad); }
+
+/* ---------- Legal pages (privacy / terms / data-deletion) ---------- */
+.legal-hero{
+  padding-block:var(--space-6) var(--space-4);
+  border-bottom:1px solid var(--surface-border);
+}
+.legal-hero h1{
+  font-size:clamp(2.2rem, 5vw, 3.2rem);
+  margin-top:var(--space-2);
+}
+.legal-hero .lede{ margin-top:var(--space-2); max-width:56ch; }
+
+.legal-body{ padding-block:var(--space-5) var(--space-7); }
+.legal-body .container{ max-width:820px; }
+
+.legal-updated{
+  display:inline-block;
+  font-size:.78rem; font-weight:500; letter-spacing:.02em;
+  color:var(--foreground-muted);
+  border:1px solid var(--surface-border);
+  background:var(--surface);
+  padding:.4rem .9rem; border-radius:var(--radius-pill);
+  margin-bottom:var(--space-4);
+}
+.legal-body h2{
+  font-size:clamp(1.2rem, 2.2vw, 1.4rem);
+  font-weight:600;
+  color:var(--foreground);
+  margin-top:var(--space-5);
+  margin-bottom:var(--space-2);
+}
+.legal-body h2:first-of-type{ margin-top:0; }
+.legal-body p{ color:var(--foreground-muted); margin-bottom:var(--space-2); }
+.legal-body strong{ color:var(--foreground); font-weight:600; }
+.legal-body a{
+  color:var(--accent-tint);
+  text-decoration:underline; text-underline-offset:3px;
+  transition:color var(--dur-fast) var(--easing);
+}
+.legal-body a:hover{ color:var(--foreground); }
+.legal-body ul{ margin:0 0 var(--space-2); padding:0; }
+.legal-body li{
+  position:relative;
+  padding-left:1.5rem; margin-bottom:.55rem;
+  color:var(--foreground-muted);
+}
+.legal-body li::before{
+  content:""; position:absolute; left:.25rem; top:.62rem;
+  width:7px; height:7px; border-radius:50%;
+  background:linear-gradient(135deg, var(--primary), var(--accent));
+}

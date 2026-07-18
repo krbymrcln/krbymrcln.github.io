@@ -612,16 +612,26 @@
             </p>
           </div>
 
+          <!-- Desktop: embedded Google Appointment Schedule in a light card -->
           <div class="booking-wrap reveal">
-            <!-- Google Calendar Appointment Schedule embed.
-                 Get the URL from Google Calendar → Create → Appointment schedule
-                 → Share → Book online, then paste it into src below. -->
             <iframe
               class="booking-frame"
               src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ21ZHe84_GyiCkrtZ85Fy0zJJNNHNLvnHbCFERajLX_Z6YfeR7EoTXnuK3_G0WgNZla3zs0OlbL?gv=true"
               title="Book a free automation audit with Daloy"
               loading="lazy"
             ></iframe>
+          </div>
+
+          <!-- Mobile: the embed is tall/awkward, so open Google's booking page instead -->
+          <div class="booking-cta-mobile reveal">
+            <a
+              class="btn btn-primary"
+              href="https://calendar.app.google/JnExBmRB8ML1BT7NA"
+              target="_blank"
+              rel="noopener"
+              >Pick a time →</a
+            >
+            <p class="booking-cta-note">Opens our live booking calendar.</p>
           </div>
         </div>
       </section>
