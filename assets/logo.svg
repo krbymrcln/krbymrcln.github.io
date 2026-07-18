@@ -1,0 +1,5 @@
+<svg class="daloy-mark" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daloy logo">
+  <path class="wave wave-1" d="M2 10 C 10 2, 18 2, 26 10 S 42 18, 50 10 S 58 2, 62 6" fill="none" stroke="#2FD4BE" stroke-width="4" stroke-linecap="round"/>
+  <path class="wave wave-2" d="M2 20 C 10 12, 18 12, 26 20 S 42 28, 50 20 S 58 12, 62 16" fill="none" stroke="#2FD4BE" stroke-width="4" stroke-linecap="round"/>
+  <path class="wave wave-3" d="M2 30 C 10 22, 18 22, 26 30 S 42 38, 50 30 S 58 22, 62 26" fill="none" stroke="#2FD4BE" stroke-width="4" stroke-linecap="round"/>
+</svg>

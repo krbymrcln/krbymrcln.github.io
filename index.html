@@ -1,35 +1,698 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daloy — Privacy &amp; Data</title>
-<meta name="description" content="Privacy Policy and Data Deletion instructions for Daloy.">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daloy — AI Automation for Philippine Businesses</title>
+    <meta
+      name="description"
+      content="Never lose a lead again. Daloy builds AI automation for Philippine SMBs — instant replies, lead scoring, and auto-routing across Messenger, Instagram, and Viber."
+    />
+    <link rel="canonical" href="https://daloy-ph.com/" />
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="brand-row">
-      <svg class="wave-mark on-dark" width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2 6c4-4 8-4 12 0s8 4 12 0 8-4 12 0" stroke-width="3.4" stroke-linecap="round"/>
-        <path d="M2 14c4-4 8-4 12 0s8 4 12 0 8-4 12 0" stroke-width="3.4" stroke-linecap="round"/>
-        <path d="M2 22c4-4 8-4 12 0s8 4 12 0 8-4 12 0" stroke-width="3.4" stroke-linecap="round"/>
-      </svg>
-      <span class="wordmark">daloy</span>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Daloy — AI Automation for Philippine Businesses"
+    />
+    <meta
+      property="og:description"
+      content="Never lose a lead again. Instant AI replies, lead scoring, and auto-routing for Philippine SMBs."
+    />
+    <meta property="og:url" content="https://daloy-ph.com/" />
+    <meta
+      property="og:image"
+      content="https://daloy-ph.com/assets/og-image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- META DOMAIN VERIFICATION: paste <meta name="facebook-domain-verification" content="REPLACE_ME"> here -->
+    <meta name="facebook-domain-verification" content="6bi8495b9tn5n3wtzix0ef4y4f5pwb" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles-v2.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Ambient cinematic background -->
+    <div class="bg-field" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
     </div>
-    <div class="brand-rule"></div>
 
-    <h1>Privacy &amp; data, in plain terms.</h1>
-    <p class="tagline">How Daloy handles the messages, contact details, and leads that pass through your Facebook Page.</p>
+    <!-- Shared SVG gradient def for the wave mark -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <linearGradient id="daloyGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#7C3AED" />
+          <stop offset="100%" stop-color="#EC4899" />
+        </linearGradient>
+      </defs>
+    </svg>
 
-    <div class="doc-links">
-      <a class="pill" href="privacy-policy.html"><span class="dot"></span>Privacy Policy</a>
-      <a class="pill" href="data-deletion.html"><span class="dot"></span>Data Deletion</a>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Daloy home">
+          <svg
+            class="daloy-mark"
+            viewBox="0 0 64 40"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              class="wave"
+              d="M2 10 C 10 2, 18 2, 26 10 S 42 18, 50 10 S 58 2, 62 6"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              class="wave"
+              d="M2 20 C 10 12, 18 12, 26 20 S 42 28, 50 20 S 58 12, 62 16"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              class="wave"
+              d="M2 30 C 10 22, 18 22, 26 30 S 42 38, 50 30 S 58 22, 62 26"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span>daloy</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#how-it-works">How it works</a>
+          <a href="#what-we-automate">What we automate</a>
+          <a href="#proof">Proof</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn btn-nav" href="#final-cta">Book a call</a>
+          <button
+            class="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+      <button class="mobile-nav-close" aria-label="Close menu">
+        <svg
+          width="26"
+          height="26"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+      <a href="#how-it-works">How it works</a>
+      <a href="#what-we-automate">What we automate</a>
+      <a href="#proof">Proof</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#final-cta">Book a call</a>
     </div>
-  </div>
-</section>
 
-</body>
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="pill"
+              ><span class="pill-dot" aria-hidden="true"></span>Founding spots
+              now open</span
+            >
+            <h1><span class="glow-text">Never lose a lead again.</span></h1>
+            <div class="hero-sub">
+              <p class="hero-sub-1">
+                Instant AI replies · Lead scoring · Auto-routing
+              </p>
+              <p class="hero-sub-2">
+                AI automation for Philippine businesses — sales, ops, and
+                follow-ups on autopilot.
+              </p>
+            </div>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#final-cta"
+                >Book a free automation audit</a
+              >
+              <a class="btn btn-secondary" href="#how-it-works"
+                >See how it works</a
+              >
+            </div>
+          </div>
+
+          <!-- AI-native chat simulation -->
+          <div
+            class="chat-card reveal"
+            aria-label="Example of Daloy answering a customer instantly"
+          >
+            <div class="chat-head">
+              <div class="chat-avatar" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="chat-title">Daloy AI</div>
+                <div class="chat-status">
+                  <span class="dot" aria-hidden="true"></span>Answering · 24/7
+                </div>
+              </div>
+            </div>
+            <div class="chat-body">
+              <!-- messages injected by main-v2.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEM STRIP -->
+      <section class="problem section-band">
+        <div class="container reveal">
+          <div class="rule" aria-hidden="true"></div>
+          <p>
+            Leads pile up in your DMs after hours. Follow-ups slip. Your team
+            retypes the same replies all day.
+          </p>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how-it-works">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">How it works</span>
+            <h2>From first message to closed lead — automatically.</h2>
+          </div>
+
+          <div class="pipeline-track">
+            <div class="pipe-node">
+              <div class="node-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                </svg>
+              </div>
+              <div class="pipe-index">01</div>
+              <h3>Capture</h3>
+              <p>A message hits your Page, IG, or Viber.</p>
+            </div>
+            <div class="pipe-node">
+              <div class="node-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 4h16v12H5.2L4 17.2V4z" />
+                  <path d="M8 9h8M8 12h5" />
+                </svg>
+              </div>
+              <div class="pipe-index">02</div>
+              <h3>Reply</h3>
+              <p>AI answers in Taglish, in seconds, 24/7.</p>
+            </div>
+            <div class="pipe-node">
+              <div class="node-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 3v18h18" />
+                  <path d="M18 17V9M13 17V5M8 17v-5" />
+                </svg>
+              </div>
+              <div class="pipe-index">03</div>
+              <h3>Qualify</h3>
+              <p>It scores the lead and logs every detail.</p>
+            </div>
+            <div class="pipe-node">
+              <div class="node-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </div>
+              <div class="pipe-index">04</div>
+              <h3>Route</h3>
+              <p>Hot leads land in your sheet/CRM and ping your team.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT WE AUTOMATE -->
+      <section id="what-we-automate" class="section-band">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">What we automate</span>
+            <h2>Systems that do the repetitive work.</h2>
+          </div>
+
+          <div class="card-grid">
+            <div class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                </svg>
+              </div>
+              <h3>Conversational lead capture &amp; reply</h3>
+              <p>
+                Messenger, Instagram, and Viber — answered instantly, in
+                Taglish.
+              </p>
+            </div>
+            <div class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 3v18h18" />
+                  <path d="M18 17V9M13 17V5M8 17v-5" />
+                </svg>
+              </div>
+              <h3>Lead scoring &amp; routing</h3>
+              <p>
+                Every conversation ranked and sent to the right person
+                automatically.
+              </p>
+            </div>
+            <div class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 12a9 9 0 1 1-2.64-6.36" />
+                  <path d="M21 3v6h-6" />
+                </svg>
+              </div>
+              <h3>Follow-up &amp; re-engagement</h3>
+              <p>
+                Sequences that nudge cold leads back in, without anyone lifting
+                a finger.
+              </p>
+            </div>
+            <div class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                  <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                </svg>
+              </div>
+              <h3>CRM / Sheets sync &amp; reporting</h3>
+              <p>
+                Every lead logged, updated, and reportable in the tools you
+                already use.
+              </p>
+            </div>
+            <div class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                  />
+                </svg>
+              </div>
+              <h3>Custom internal workflows</h3>
+              <p>
+                n8n-orchestrated automations built around how your business
+                actually runs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INDUSTRIES -->
+      <section>
+        <div class="container reveal">
+          <div class="chips">
+            <span class="chip">Real estate</span>
+            <span class="chip">Cleaning services</span>
+            <span class="chip">Recruitment / HR</span>
+            <span class="chip">Retail</span>
+            <span class="chip">Clinics</span>
+          </div>
+          <p class="chips-caption">Same engine, tuned per industry.</p>
+        </div>
+      </section>
+
+      <!-- PROOF -->
+      <section id="proof" class="section-band">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Proof / pilot</span>
+            <h2>Live in the field, not a demo.</h2>
+          </div>
+          <div class="proof-card reveal">
+            <span class="eyebrow">Metro Manila · Cleaning services</span>
+            <p>
+              Live pilot — a Metro Manila cleaning business: ~50 inquiries/week,
+              every one answered in seconds and captured to a live lead sheet,
+              even after hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY DALOY -->
+      <section>
+        <div class="container why-block">
+          <div class="reveal">
+            <span class="eyebrow">Why Daloy</span>
+            <div class="rule" aria-hidden="true"></div>
+            <h2>Built by the person who runs it.</h2>
+          </div>
+          <div class="reveal">
+            <p>
+              Built and run by a full-stack developer, not a reseller. Real
+              production systems — Human resources, payroll, dealership,
+              inventory, lending — now pointed at automation for local SMBs. You
+              talk to the person who builds it.
+            </p>
+            <div class="why-badges">
+              <span class="why-badge">Human resource</span>
+              <span class="why-badge">Payroll systems</span>
+              <span class="why-badge">Dealership platforms</span>
+              <span class="why-badge">Inventory systems</span>
+              <span class="why-badge">Lending platforms</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section-band">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Questions, answered.</h2>
+          </div>
+
+          <div class="faq-list reveal">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What platforms do you automate?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Messenger, Instagram, and Viber (where supported), plus your
+                    Sheets/CRM and internal tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is my customers' data safe?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. We only process what's needed to reply and log leads,
+                    stored in your own Google/CRM account. See the
+                    <a href="privacy.html">Privacy Policy</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How much does it cost?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Depends on scope and volume. Book a call and we'll size it
+                    to you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do I need to be technical?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>No.</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How fast can we go live?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>A pilot in days, not months.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section id="final-cta" class="final-cta">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="pill"
+              ><span class="pill-dot" aria-hidden="true"></span>Founding spots
+              now open</span
+            >
+            <h2><span class="glow-text">Ready to stop losing leads?</span></h2>
+            <p class="lede">
+              Book a free automation audit. We'll look at how you're handling
+              inbound today and show you exactly what to automate first.
+            </p>
+            <p class="final-cta-email">
+              Prefer email? Reach us at
+              <a href="mailto:info@daloy-ph.com">info@daloy-ph.com</a>
+            </p>
+          </div>
+
+          <div class="booking-wrap reveal">
+            <!-- Google Calendar Appointment Schedule embed.
+                 Get the URL from Google Calendar → Create → Appointment schedule
+                 → Share → Book online, then paste it into src below. -->
+            <iframe
+              class="booking-frame"
+              src="REPLACE_ME_GOOGLE_BOOKING_URL"
+              title="Book a free automation audit with Daloy"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand">
+              <svg
+                class="daloy-mark"
+                viewBox="0 0 64 40"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                style="width: 28px"
+              >
+                <path
+                  class="wave"
+                  d="M2 10 C 10 2, 18 2, 26 10 S 42 18, 50 10 S 58 2, 62 6"
+                  fill="none"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  class="wave"
+                  d="M2 20 C 10 12, 18 12, 26 20 S 42 28, 50 20 S 58 12, 62 16"
+                  fill="none"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  class="wave"
+                  d="M2 30 C 10 22, 18 22, 26 30 S 42 38, 50 30 S 58 22, 62 26"
+                  fill="none"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span>daloy</span>
+            </div>
+            <p class="footer-meta">
+              Daloy — AI Automation<br />
+              Daloy Computer Programming Services<br />
+              Metro Manila, Philippines<br />
+              <a href="mailto:info@daloy-ph.com">info@daloy-ph.com</a><br />
+              <a href="tel:+639692250334">+63 969 225 0334</a>
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="daloy-data-deletion.html">Data Deletion</a>
+            <a href="terms.html">Terms</a>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <span>
+            ©
+            <span data-year>2026</span>
+            Daloy Computer Programming Services. All rights reserved.
+          </span>
+          <span>
+            67 Magtanggol St, Maypajo Brgy 29, 1410 Caloocan City, Metro Manila,
+            Philippines
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main-v2.js" defer></script>
+  </body>
 </html>
